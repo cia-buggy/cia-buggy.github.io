@@ -1,0 +1,24 @@
+:root {
+  --color-dark-background: #121212;
+	--color-light-background: #424242;
+	--color-main: #EBEBEB;
+	--color-accent: #E5C454;
+}
+body {
+	background-color: var(--color-dark-background);
+	color:var(--color-main);
+	font-family: 'Nunito', sans-serif;
+}
+.bounce { 
+            -webkit-animation-name: bounce; 
+            animation-name: bounce; 
+         }
+.bounce-1{
+	animation-name: bounce-1;
+	animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(1rem); }
+        100% { transform: translateY(0); }
+    }
