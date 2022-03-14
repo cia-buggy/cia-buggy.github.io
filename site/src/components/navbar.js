@@ -26,6 +26,7 @@ const ListStyles = styled(Link)`
 	display: inline-flex;
 	justify-content: right;
 	align-items: center;
+	font-family: 'Saira', sans-serif;	
 	color: ${MAIN_TXT};
 	text-decoration: none;
 	&:hover {
@@ -46,7 +47,6 @@ const Navbar = () => {
           <li><ListStyles to="/buggies">Buggies</ListStyles></li>
           <li><ListStyles to="/gallery">Gallery</ListStyles></li>
           <li><ListStyles to="/join">Join</ListStyles></li>
-          <li><ListStyles to="/history">History</ListStyles></li>
         </NavStyles>
       </NavWrap>
     </div>
