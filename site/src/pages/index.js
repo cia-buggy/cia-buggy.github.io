@@ -109,6 +109,7 @@ const CIADesc = styled.p`
 	display:block;
 	align:justify;
 	font-size:1.4rem;
+	font-family: 'Nunito', sans-serif;	
 	padding-bottom:4rem;
 	line-height:3rem;
 `

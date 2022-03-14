@@ -22,6 +22,7 @@ const NavStyles = styled.ul`
 	border-radius: 4px;
 	list-style-type: none;
 	background-color: ${DARK_BG};	
+	font-family: 'Nunito', sans-serif;	
 	padding:0.75rem;`;
 	
 const Logo = styled.img`

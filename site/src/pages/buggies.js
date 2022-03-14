@@ -7,6 +7,9 @@ import equinox from "../images/equinox.jpg"
 import icarus from "../images/icarus.jpg"
 import orca from "../images/orca.jpg"
 import impulse from "../images/impulse.jpg"
+import kingfisher from "../images/kingfisher.jpg"
+import emperor from "../images/emperor.jpg"
+import aroura from '../images/aurora.jpg'
 import Navbar from "../components/navbar";
 import Footer from "../components/footer"
 import line from "../images/yellowline.png"
@@ -62,6 +65,9 @@ export default class buggycarosel extends Component {
 					<Wrapper>
 						<HeadingText>Active Buggies</HeadingText>
             <Carousel autoPlay="true" infiniteLoop="true">
+								<Buggyimg src={kingfisher}/>
+								<Buggyimg src={aroura}/>
+								<Buggyimg src ={emperor}/>
                 <Buggyimg src={tempest}/>
                 <Buggyimg src={equinox}/>
                 <Buggyimg src={icarus}/>
