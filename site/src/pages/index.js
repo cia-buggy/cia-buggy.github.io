@@ -166,6 +166,18 @@ const TeamBg = styled.div`
 	background-color: ${LIGHT_BG};
 	border-radius:10px;
 `
+const Cal = styled.iframe`
+	width:80%;
+	height:30rem;
+	margin-left:10%;
+	margin-right:10%;
+	justify-content:center;
+	margin-bottom: 4rem;
+	color: ${MAIN_TXT};
+	border-width:0;
+	frameborder:0;
+	scrolling:No;
+`
 // markup
 const IndexPage = () => {
   return (
@@ -184,7 +196,7 @@ const IndexPage = () => {
 					<LineStyle src={line}></LineStyle>
       		<HeadingTextRight>Events for 2021</HeadingTextRight>
 				</HeadingStyle>
-				<Events/>	
+				<Cal src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23FFFFFF&ctz=America%2FNew_York&mode=WEEK&showTitle=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showNav=0&src=ODFjaGRqNmxwYXYyM3Y5ZmUzaWc3bXJqODhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23EF6C00"></Cal>
 				<LightBg>
 					<HeadingStyle>
       			<HeadingTextLeft>Welcome Agents, </HeadingTextLeft>

@@ -67,25 +67,25 @@ const EventTime = styled.p`
 	padding-top: 1.2rem;
 	padding-bottom:1.7rem;
 `
-const Event = () => {
+const Event = ({date, location, title, description, contact}) => {
 	return(
 		<EventBackground>
-			<EventTitle>EVENT TITLE</EventTitle>
+			<EventTitle>{title}</EventTitle>
 			<EventPhoto>
 				<img src={eventpic}/>
 			</EventPhoto>
 			<EventDescription>
 				<Heading>Location</Heading>
-				<Info>TBD</Info>
+				<Info>{location}</Info>
 
 				<Heading>Contact</Heading>
-				<Info>TBD</Info>
+				<Info>{contact}</Info>
 
 				<Heading>Description</Heading>
-				<Info>This fun event has no description, so you'll have to show up to find out what happens.</Info>
+				<Info>{description}</Info>
 
 			</EventDescription>
-			<EventTime>Tuesday 1/15 at 3:00 PM</EventTime>
+			<EventTime>{date}</EventTime>
 		</EventBackground>
 	)
 }
