@@ -17,7 +17,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.6",
     "gapi": "^0.0.3",
-    "gatsby": "^4.9.2",
+    "gatsby": "^3.9.14",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-sharp": "^4.9.1",
     "gatsby-plugin-styled-components": "^5.9.0",
