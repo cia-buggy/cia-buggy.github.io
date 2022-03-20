@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
       title: `cia-buggy`,
   },
-	pathPrefix: "/",
+	pathPrefix: "/Tang-erin.github.io",
 
 	plugins: [
 		"gatsby-plugin-styled-components",    
