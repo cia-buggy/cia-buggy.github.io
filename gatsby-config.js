@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
       title: `cia-buggy`,
+    siteUrl: `https://www.yourdomain.tld`
   },
 	pathPrefix: "/Tang-erin.github.io",
 
