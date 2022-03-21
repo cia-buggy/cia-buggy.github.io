@@ -133,11 +133,14 @@ const LearnMore = styled.button`
 `
 const Team = styled.div`
 	display:flex;
+	flex-direction: row;
 	align-self:center;
-	padding:1rem;
+	padding:0.5rem;
 	align-items:center;
 	align-self:center;
 	justify-content:center;
+	overflow-wrap: break-word;
+	 flex-wrap: wrap;
 `
 
 const TeamPic = styled.img`
@@ -160,7 +163,7 @@ const Text = styled.p`
 
 `
 const TeamBg = styled.div`
-	width:35%;
+	width:35rem;
 	padding:2rem;
 	margin:2rem;
 	background-color: ${LIGHT_BG};
