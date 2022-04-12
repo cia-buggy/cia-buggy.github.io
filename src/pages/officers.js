@@ -36,15 +36,25 @@ const HeadingTextRight = styled.p`
 	margin-left:20%;
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		padding-bottom:0rem;
+		font-size:2rem;
+	}
 	`
 const HeadingStyle = styled.div`
 	padding-top:5rem;
 	padding-bottom:3rem;
+	@media (max-width : 770px) {
+		padding-bottom:0rem;
+	}
 
 `;
 const LineStyle = styled.img`
 	display: inline-block;
 	vertical-align: middle;
+		@media (max-width : 770px) {
+		width: 100vw;
+	}
 `
 const GalleryWrap = styled.div`
 	width:100%;

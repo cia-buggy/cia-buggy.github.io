@@ -31,6 +31,9 @@ const Logo = styled.img`
 	display: inline-flex;
 	font-size: 1.2rem;
 	padding: 0rem 1rem;
+	@media (max-width : 770px) {
+		padding: 0rem 0.4rem;
+	}
 	&: hover{
 			scale:1.1;
 	}

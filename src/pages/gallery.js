@@ -17,15 +17,26 @@ const HeadingTextRight = styled.p`
 	margin-left:20%;
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		padding-bottom:0rem;
+		font-size:2rem;
+	}
 	`
 const HeadingStyle = styled.div`
 	padding-top:5rem;
 	padding-bottom:0.2rem;
+	@media (max-width : 770px) {
+		padding-bottom:0rem;
+		padding-top:2rem;
+	}
 
 `;
 const LineStyle = styled.img`
 	display: inline-block;
 	vertical-align: middle;
+		@media (max-width : 770px) {
+		width: 100vw;
+	}
 `
 const Text = styled.p`
 	font-family: 'Nunito', sans-serif;	
@@ -38,6 +49,10 @@ const Text = styled.p`
 	line-height:2;
 	margin-left: 15%;
 	text-align:center;
+	@media (max-width : 770px) {
+		padding-top:0;
+	}
+
 `
 const GalleryImg = styled.img`
 	width: 100% !important;
@@ -59,6 +74,12 @@ const Gallery = styled.div`
 	width: 80%;
 	margin-left:10%;
 	margin-right:10%;
+	@media (max-width : 770px) {
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
+		padding-bottom:1rem;
+	}
 `
 const ImageSupplier = () => {
   const { allFile } = useStaticQuery(graphql`

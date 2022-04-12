@@ -28,6 +28,11 @@ const HeadingText = styled.p`
 	color: ${ACCENT_TXT};
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		font-size: 2.1rem;
+		margin-left:auto
+		margin-right:auto;
+	}
 	`
 const HeadingTextRight = styled.p`
 	font-family: 'Saira', sans-serif;
@@ -37,21 +42,40 @@ const HeadingTextRight = styled.p`
 	margin-left:20%;
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		font-size: 2.1rem;
+		margin-left:auto
+		margin-right:auto;
+		padding:0.5rem;
+	}
+	
 	`
 const HeadingStyle = styled.div`
 	padding-top:5rem;
 	padding-bottom:0.2rem;
+		@media (max-width : 770px) {
+		padding-bottom:0rem;
+		padding-top:2rem;
+	}
 
 `;
 const LineStyle = styled.img`
 	display: inline-block;
 	vertical-align: middle;
+		@media (max-width : 770px) {
+		width: 100vw;
+	}
 `
 
 const Wrapper = styled.div`
 	width 70%;
 	margin-left:15%;
 	margin-right:15%;
+	@media (max-width : 770px) {
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
+	}
 `
 export default class buggycarosel extends Component {
     render() {

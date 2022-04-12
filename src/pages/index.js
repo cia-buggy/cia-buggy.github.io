@@ -24,18 +24,21 @@ const MainStyle = styled.main`
 `;
 const LightBg = styled.div`
 	background-color: ${LIGHT_BG};
-	width: 100%;
+	width: 100vw;
 	padding-bottom: 5rem;
 `
 const HeadingStyle = styled.div`
 	padding-top:5rem;
 	padding-bottom:3rem;
-
 `;
 const Content = styled.div`
+
 	background-color: ${DARK_BG};
 	margin-top:100vh;
-	width:100%;
+	width:100vw;
+	@media (max-width : 770px) {
+		margin-top:15vh;
+	}
 `
 const HeadingTextRight = styled.p`
 	font-family: 'Saira', sans-serif;
@@ -45,6 +48,9 @@ const HeadingTextRight = styled.p`
 	margin-left:5%;
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		padding:0.7rem;
+	}
 	`
 const HeadingTextLeft = styled.p`
 	font-family: 'Saira', sans-serif;
@@ -54,21 +60,32 @@ const HeadingTextLeft = styled.p`
 	margin-left:10%;
 	margin-top:-10%;
 	display: inline-block;
+	@media (max-width : 770px) {
+		margin-top:5%;
+		margin-left:5%;
+	}
 `
 
 const LineStyle = styled.img`
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		width:100vw;
+	}
 `
 const LineStyleRight = styled.div`
 	display: inline-block;
 	vertical-align:middle;
 	float:right;
+	@media (max-width : 770px) {
+		float:none;
+		width: 100vw;
+	}
 `
 const Hero = styled.div`
 	top:3rem;
   position: fixed;
-	width:100%;
+	width:100vw;
 	z-index:-1;
 `
 const ArrowText = styled.div`
@@ -78,6 +95,9 @@ const ArrowText = styled.div`
 	margin-left: auto;
 	font-size: 2vh;
 	font-family: 'Saira', sans-serif;
+	@media (max-width : 770px) {
+		font-size: 0.8rem;
+	}
 `
 const ArrowStyle = styled.img`
 	width: 1.8rem;
@@ -89,7 +109,9 @@ const ArrowStyle = styled.img`
   transform: translate(-50%, 0%);
   bottom: 15%;
   animation: bounce 2s infinite;
-  
+  @media (max-width : 770px) {
+		width: 1rem;
+	}
   @keyframes bounce {
     0% {transform: translate(-50%, 0%);}
     50% {transform: translate(-50%, 30%);}
@@ -112,6 +134,10 @@ const CIADesc = styled.p`
 	font-family: 'Nunito', sans-serif;	
 	padding-bottom:4rem;
 	line-height:3rem;
+	@media (max-width : 770px) {
+		font-size:1rem;
+		width:75vw;
+	}
 `
 const LearnMore = styled.button`
 	display:block;
@@ -149,6 +175,10 @@ const TeamPic = styled.img`
 	height:30rem;
 	margin-left:2rem;
 	margin-right:2rem;
+	@media (max-width : 770px) {
+		width:20rem;
+		height:20rem;
+	}
 `
 const Heading = styled.h2`
 	font-family: 'Saira', sans-serif;

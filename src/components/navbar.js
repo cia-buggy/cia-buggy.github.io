@@ -11,6 +11,9 @@ const NavWrap = styled.nav`
 	margin-left: auto; 
 	margin-right: 0;
 	text-align: right;
+	@media (max-width : 770px) {
+		font-size:0.5rem;
+	}
 `
 const NavStyles = styled.ul`	
 	display: inline-flex;
@@ -18,6 +21,7 @@ const NavStyles = styled.ul`
 	list-style-type: none;
 	background-color: ${DARK_BG};	
 	padding:0.75rem;`;
+
 	
 
 const ListStyles = styled(Link)`
@@ -29,6 +33,10 @@ const ListStyles = styled(Link)`
 	font-family: 'Saira', sans-serif;	
 	color: ${MAIN_TXT};
 	text-decoration: none;
+	@media (max-width : 770px) {
+		font-size:0.7rem;
+		padding:0rem 0.7rem;
+	}
 	&:hover {
     color: ${ACCENT_TXT};
 		text-decoration: underline;

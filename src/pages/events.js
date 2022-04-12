@@ -14,15 +14,27 @@ const HeadingTextRight = styled.p`
 	margin-left:20%;
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		font-size: 2.1rem;
+		margin-left:auto
+		margin-right:auto;
+		
+	}
 	`
 const HeadingStyle = styled.div`
 	padding-top:5rem;
 	padding-bottom:3rem;
-
+	@media (max-width : 770px) {
+		padding-bottom:0rem;
+		padding:top:3rem;
+	}
 `;
 const LineStyle = styled.img`
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		width: 100vw;
+	}
 `
 
 const Calendar = styled.iframe`
@@ -32,6 +44,12 @@ const Calendar = styled.iframe`
 	width:  80%;
 	height: 100vh;
 	scrolling: "no";
+	@media (max-width : 770px) {
+		margin-left:5%;
+		margin-right:5%;
+		width:90%;
+		height:70vh;
+	}
 `
 const Text = styled.p`
 	font-family: 'Saira', sans-serif;
@@ -43,6 +61,12 @@ const Text = styled.p`
 	margin-right: 15%;
 	margin-left: 15%;
 	text-align:center;
+	@media (max-width : 770px) {
+		margin-right:10%;
+		margin-left:10%;
+		font-size: 1rem;
+		width:80%
+	}
 
 `
 const EventsPage = () => {

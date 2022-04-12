@@ -27,6 +27,10 @@ const HeadingTextRight = styled.p`
 	margin-left:20%;
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		padding-bottom:0rem;
+		font-size:2rem;
+	}
 	`
 const HeadingStyle = styled.div`
 	padding-top:5rem;
@@ -36,6 +40,9 @@ const HeadingStyle = styled.div`
 const LineStyle = styled.img`
 	display: inline-block;
 	vertical-align: middle;
+	@media (max-width : 770px) {
+		width: 100vw;
+	}
 `
 const Text = styled.p`
 	font-family: 'Nunito', sans-serif;	
@@ -47,13 +54,26 @@ const Text = styled.p`
 	margin-right: 15%;
 	line-height:2;
 	margin-left: 15%;
+	@media (max-width : 770px) {
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
+	}
 `
 const ImageJoin = styled.img`
 	width:27rem;
+	@media (max-width : 770px) {
+		width:80%;
+	}
 `
 const Section = styled.div`
 	padding:2rem;
 	width40%;
+	@media (max-width : 770px) {
+		width:80%;
+		padding:1rem;
+	}
+
 `
 const Titles = styled.h1`
 	font-family: 'Saira', sans-serif;
@@ -65,6 +85,10 @@ const Descript = styled.p`
 	font-size:1.2rem;
 	font-family: 'Nunito', sans-serif;	
 	width: 27rem;
+	media (max-width : 770px) {
+		width:20rem;
+		font-size:1rem;
+	}
 `
 const Info = styled.div`
 	display:flex;	
@@ -72,6 +96,9 @@ const Info = styled.div`
 	margin-left:auto;
 	justify-content:center;
 	margin-right:auto;
+	@media (max-width : 770px) {
+		flex-direction: column;
+	}
 `
 const Form = styled.iframe`
 	width: 50%;
@@ -81,10 +108,15 @@ const Form = styled.iframe`
 	margin-right:25%;
 	frameborder:0;
 	border-width: 0;
+	@media (max-width : 770px) {
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
+	}
 
 `
 const Wrap = styled.div`
-	width:100%;
+	width:100vw;
 `
 
 
