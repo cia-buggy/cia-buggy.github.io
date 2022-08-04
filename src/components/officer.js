@@ -5,7 +5,8 @@ import eventpic from "../images/genericevent.jpg"
 
 const OfficerPhoto = styled.img`
 	width: 15rem;
-	height: auto;
+	height: 15rem;
+	object-fit: cover;
 	display: block;
 	border-radius:50%;
 	margin-left: auto;
